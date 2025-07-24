@@ -1,0 +1,9 @@
+# Visual Studio Code
+.vscode/*
+.history
+
+# General/MacOS
+.DS_Store
+
+#Environment variables
+.env
