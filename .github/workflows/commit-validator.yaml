@@ -1,0 +1,16 @@
+name: conventional-commits-validator
+
+on:
+  pull_request:
+    types: [opened, edited, synchronize]
+    branches: [ main ]
+
+jobs:
+  validate-commits:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Validate commits
+        uses: webiny/action-conventional-commits@v1.3.0
